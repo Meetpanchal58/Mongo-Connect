@@ -18,8 +18,8 @@ with open('README.md', 'r', encoding='utf-8') as f:
     long_description = f.read()     
    
 
-__version__ = "1.0"
-REPO_NAME = "Mongo_Connect"
+__version__ = "0.10"
+REPO_NAME = "Mongo-Connect"
 PKG_NAME= "load_MongoDB"
 AUTHOR_USER_NAME = "meetpanchal58"
 AUTHOR_EMAIL = "meetpanchal0580@gmail.com"
