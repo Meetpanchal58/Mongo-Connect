@@ -1,10 +1,10 @@
 # Usage Guide
 
 ## Installation of load_MongoDB Package
-You can install the `load_Mongo` package via pip:
+You can install the `load_MongoDB` package via pip:
 
 ```bash
-pip install load_Mongo
+pip install load_MongoDB
 ```
 
 ## Importing the class
@@ -41,7 +41,7 @@ mongo_op.insert(data_to_insert_many)
 ```
 
 ## More CRUD Operations
-Similar to insert(), unified functions are provided for each CRUD operation such as Update, Delete, Find. You can find detailed information with examples in the [load_Mongo Tutorial](https://github.com/Meetpanchal58/Mongo_Connect/blob/main/experiments/Load-MongoDB%20Tutorial.ipynb) in the experiments/load_MongoDB Tutorial directory.
+Similar to insert(), unified functions are provided for each CRUD operation such as Update, Delete, Find. You can find detailed information with examples in the [load_MongoDB Tutorial](https://github.com/Meetpanchal58/Mongo_Connect/blob/main/experiments/Load-MongoDB%20Tutorial.ipynb) in the experiments/load_MongoDB Tutorial directory.
 
 ---
 
