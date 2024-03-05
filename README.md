@@ -3,21 +3,45 @@
 ## Installation of load_MongoDB Package
 You can install the `load_MongoDB` package via pip:
 
-![Screenshot 2024-03-05 150547](https://github.com/Meetpanchal58/Mongo-Connect/assets/63542891/75dc95df-0bad-464c-8c4e-cb37e7e4abc5)
+```bash
+pip install load_MongoDB
+```
 
 ## Importing the class
 Import the MongoOperation class from mongodb_connect.mongo_crud module:
 
-![Screenshot 2024-03-05 150612](https://github.com/Meetpanchal58/Mongo-Connect/assets/63542891/68bcff65-f767-4ced-ae24-00fdcb3f22fa)
+```python
+from mongodb_connect.mongo_crud import MongoOperation
+```
 
 ## Connecting to Database
 Create an instance of MongoOperation class with your database credentials:
 
-![Screenshot 2024-03-05 150647](https://github.com/Meetpanchal58/Mongo-Connect/assets/63542891/60c48470-5267-43a1-b373-7b0404d5c1fa)
+```python
+client_url = "mongodb+srv://username:password@cluster0.4euesby.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+database_name = "Database_name"
+collection_name = "Collection_name"
+mongo_op = MongoOperation(client_url, database_name, collection_name)
+```
 
+## Insert Record
+This Unified Insert Function can perform both insert_one() and insert_many() Operations 
 
-## CRUD Operations
-All of the CRUD operation such as Insert, Update, Delete & Find. You can find detailed information with examples in the [load_MongoDB Tutorial](https://github.com/Meetpanchal58/Mongo_Connect/blob/main/experiments/Load-MongoDB%20Tutorial.ipynb) in the experiments/load_MongoDB Tutorial directory.
+```python
+data_to_insert_single = {"name": "Alice", "age": 25}
+mongo_op.insert(data_to_insert_single)
+```
+
+```python
+data_to_insert_many = [
+    {"name": "Bob", "age": 30},
+    {"name": "Charlie", "age": 35}
+]
+mongo_op.insert(data_to_insert_many)
+```
+
+## More CRUD Operations
+Similar to insert(), unified functions are provided for each CRUD operation such as Update, Delete, Find. You can find detailed information with examples in the [load_MongoDB Tutorial](https://github.com/Meetpanchal58/Mongo_Connect/blob/main/experiments/Load-MongoDB%20Tutorial.ipynb) in the experiments/load_MongoDB Tutorial directory.
 
 ---
 
