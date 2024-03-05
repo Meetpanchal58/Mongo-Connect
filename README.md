@@ -30,9 +30,7 @@ This Unified Insert Function can perform both insert_one() and insert_many() Ope
 ```python
 data_to_insert_single = {"name": "Alice", "age": 25}
 mongo_op.insert(data_to_insert_single)
-```
 
-```python
 data_to_insert_many = [
     {"name": "Bob", "age": 30},
     {"name": "Charlie", "age": 35}
