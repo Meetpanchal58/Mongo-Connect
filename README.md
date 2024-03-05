@@ -2,6 +2,7 @@
 
 ## Installation of load_MongoDB Package
 You can install the `load_MongoDB` package via pip:
+![Screenshot 2024-03-05 150547](https://github.com/Meetpanchal58/Mongo-Connect/assets/63542891/75dc95df-0bad-464c-8c4e-cb37e7e4abc5)
 
 ```bash
 pip install load_MongoDB
